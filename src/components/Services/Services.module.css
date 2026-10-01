@@ -1,0 +1,41 @@
+.list {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.item {
+  display: flex;
+  align-items: baseline;
+  gap: 1.25rem;
+  padding: 1.25rem 0;
+  border-top: 1px solid var(--line);
+}
+
+.num {
+  font-family: var(--font-geist-mono), "SFMono-Regular", Menlo, monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  color: var(--gray-400);
+  transition: color 0.3s ease;
+}
+
+.name {
+  font-size: 1.0625rem;
+  letter-spacing: -0.01em;
+  transition: transform 0.35s var(--ease-out);
+}
+
+.item:hover .num {
+  color: var(--foreground);
+}
+
+.item:hover .name {
+  transform: translateX(8px);
+}
+
+@media (min-width: 768px) {
+  .list {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 4rem;
+  }
+}

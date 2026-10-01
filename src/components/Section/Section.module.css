@@ -1,0 +1,38 @@
+.section {
+  padding: clamp(4.5rem, 10vw, 7.5rem) 0;
+}
+
+.container {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+}
+
+.head {
+  display: flex;
+  align-items: baseline;
+  gap: 1.25rem;
+  margin-bottom: clamp(2.5rem, 6vw, 4rem);
+}
+
+.index {
+  font-family: var(--font-geist-mono), "SFMono-Regular", Menlo, monospace;
+  font-size: 0.8125rem;
+  letter-spacing: 0.08em;
+  color: var(--gray-400);
+}
+
+.title {
+  font-size: clamp(1.875rem, 4.5vw, 2.75rem);
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  text-wrap: balance;
+}
+
+.rule {
+  flex: 1;
+  height: 1px;
+  align-self: center;
+  background: var(--line);
+}

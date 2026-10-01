@@ -1,0 +1,67 @@
+.hero {
+  padding: clamp(6rem, 16vh, 10.5rem) 0 clamp(5rem, 12vh, 8.5rem);
+}
+
+.container {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+}
+
+.kicker {
+  margin-bottom: 1.75rem;
+  font-family: var(--font-geist-mono), "SFMono-Regular", Menlo, monospace;
+  font-size: 0.8125rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gray-500);
+}
+
+.title {
+  margin-bottom: 2rem;
+  font-size: clamp(3rem, 9vw, 6.25rem);
+  font-weight: 600;
+  line-height: 1.02;
+  letter-spacing: -0.045em;
+  text-wrap: balance;
+}
+
+.lede {
+  max-width: 44rem;
+  margin-bottom: 1.5rem;
+  font-size: clamp(1.25rem, 2.6vw, 1.625rem);
+  line-height: 1.45;
+  letter-spacing: -0.01em;
+  text-wrap: pretty;
+}
+
+.sub {
+  max-width: 36rem;
+  margin-bottom: 3rem;
+  font-size: 1.0625rem;
+  line-height: 1.75;
+  color: var(--gray-500);
+  text-wrap: pretty;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .kicker {
+    animation-delay: 0.05s;
+  }
+
+  .title {
+    animation-delay: 0.15s;
+  }
+
+  .lede {
+    animation-delay: 0.25s;
+  }
+
+  .sub {
+    animation-delay: 0.35s;
+  }
+
+  .action {
+    animation-delay: 0.45s;
+  }
+}
